@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Search, Layers, Code2, Rocket, Quote } from 'lucide-react';
+import { ArrowRight, Search, Layers, Code2, Rocket } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Button from '@/components/ui/Button';
 import { PROCESS } from '@/data/content';
@@ -104,26 +104,6 @@ export function CTA() {
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent" />
 
         <div className="relative">
-          {/* Testimonial quote card */}
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="show"
-            viewport={viewportOnce}
-            className="mb-10 flex justify-center"
-          >
-            <div className="max-w-lg rounded-2xl border border-white/10 bg-white/5 px-6 py-5 text-left backdrop-blur-sm">
-              <Quote size={18} className="mb-2 text-cyan-400" />
-              <p className="text-sm italic text-slate-300 leading-relaxed">
-                "Arun&apos;s cloud strategy cut our infrastructure costs by 32% while boosting uptime
-                to 99.99%. Exceptional expertise and seamless execution."
-              </p>
-              <p className="mt-3 text-xs font-semibold text-cyan-400">
-                — CTO, Regional Digital Bank
-              </p>
-            </div>
-          </motion.div>
-
           <motion.div
             variants={fadeUp}
             initial="hidden"

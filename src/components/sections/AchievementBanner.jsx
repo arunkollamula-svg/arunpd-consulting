@@ -39,16 +39,6 @@ const metrics = [
   },
 ];
 
-const testimonials = [
-  {
-    quote: "Arun's cloud strategy cut our infrastructure costs by 32% while boosting uptime to 99.99%.",
-    author: 'CTO, Regional Digital Bank',
-  },
-  {
-    quote: "The AI recommendation engine he built drove a 3.1x increase in our conversion rate.",
-    author: 'VP Engineering, National Retail Group',
-  },
-];
 
 export default function AchievementBanner() {
   return (
@@ -125,27 +115,6 @@ export default function AchievementBanner() {
                 <Counter value={value} suffix={suffix} duration={2} />
               </div>
               <p className="mt-2 text-sm font-medium text-slate-400">{label}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Testimonial strip */}
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={viewportOnce}
-          className="mb-12 grid gap-4 sm:grid-cols-2"
-        >
-          {testimonials.map(({ quote, author }) => (
-            <motion.div
-              key={author}
-              variants={fadeUp}
-              className="relative rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 backdrop-blur-sm"
-            >
-              <div className="mb-3 text-3xl font-serif text-cyan-400 leading-none">"</div>
-              <p className="text-sm italic text-slate-300">{quote}</p>
-              <p className="mt-3 text-xs font-semibold text-cyan-400">— {author}</p>
             </motion.div>
           ))}
         </motion.div>

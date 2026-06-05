@@ -1,7 +1,6 @@
 import Seo from '@/lib/Seo';
 import PageHeader from '@/components/ui/PageHeader';
 import Industries from '@/components/sections/Industries';
-import CaseStudies from '@/components/sections/CaseStudies';
 import { CTA } from '@/components/sections/Process';
 
 export default function IndustriesPage() {
@@ -19,7 +18,6 @@ export default function IndustriesPage() {
         subtitle="Deep, regulated-industry experience across banking, government, retail, healthcare, and SaaS — serving clients in the USA, UK, and across Europe."
       />
       <Industries />
-      <CaseStudies />
       <CTA />
     </>
   );

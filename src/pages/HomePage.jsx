@@ -8,7 +8,6 @@ import AchievementBanner from '@/components/sections/AchievementBanner';
 import Solutions from '@/components/sections/Solutions';
 import Industries from '@/components/sections/Industries';
 import TechStack from '@/components/sections/TechStack';
-import CaseStudies from '@/components/sections/CaseStudies';
 import { Process, CTA } from '@/components/sections/Process';
 import Blog from '@/components/sections/Blog';
 
@@ -45,7 +44,6 @@ export default function HomePage() {
       <Solutions />
       <Industries />
       <TechStack />
-      <CaseStudies />
       <Process />
       <Blog limit={3} />
       <CTA />
