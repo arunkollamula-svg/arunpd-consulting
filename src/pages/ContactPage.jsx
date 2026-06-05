@@ -15,7 +15,7 @@ export default function ContactPage() {
           '@type': 'ContactPage',
           name: 'Contact Arun P Divakaran — Cloud & AI Consultant',
           description: 'Book a free consultation for Cloud, AI, and Digital Transformation consulting — serving clients across the USA, UK, and Europe.',
-          url: 'https://arundivakaran.com/contact',
+          url: 'https://arunpd.com/contact',
           mainEntity: {
             '@type': 'Person',
             name: 'Arun P Divakaran',

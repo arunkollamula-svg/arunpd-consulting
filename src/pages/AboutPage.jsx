@@ -18,8 +18,8 @@ export default function AboutPage() {
           name: 'Arun P Divakaran',
           jobTitle: 'Senior Technology Consultant',
           description: '15+ years delivering Cloud, AI, and FinTech solutions for US and European enterprises.',
-          url: 'https://arundivakaran.com/about',
-          image: 'https://arundivakaran.com/profile.jpeg',
+          url: 'https://arunpd.com/about',
+          image: 'https://arunpd.com/profile.jpeg',
           sameAs: ['https://www.linkedin.com/in/arunmca1/'],
           areaServed: [
             { '@type': 'Country', name: 'United States' },

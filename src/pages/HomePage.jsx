@@ -25,8 +25,8 @@ export default function HomePage() {
           name: 'Arun P Divakaran',
           jobTitle: 'Senior Technology Consultant',
           description: 'Cloud, AI & Digital Transformation consultant serving USA and European enterprises.',
-          url: 'https://arundivakaran.com/',
-          image: 'https://arundivakaran.com/profile.jpeg',
+          url: 'https://arunpd.com/',
+          image: 'https://arunpd.com/profile.jpeg',
           sameAs: ['https://www.linkedin.com/in/arunmca1/'],
           knowsAbout: ['Cloud Computing', 'Artificial Intelligence', 'FinTech', 'DevOps', 'Digital Transformation'],
           areaServed: [

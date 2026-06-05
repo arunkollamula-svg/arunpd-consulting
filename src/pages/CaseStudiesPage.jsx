@@ -16,7 +16,7 @@ export default function CaseStudiesPage() {
           '@type': 'CollectionPage',
           name: 'Technology Consulting Case Studies — USA & Europe',
           description: 'Real outcomes from Cloud, AI, and FinTech consulting engagements for US and European enterprises.',
-          url: 'https://arundivakaran.com/case-studies',
+          url: 'https://arunpd.com/case-studies',
           author: {
             '@type': 'Person',
             name: 'Arun P Divakaran',
