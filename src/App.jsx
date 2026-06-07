@@ -13,6 +13,11 @@ const BlogPage = lazy(() => import('@/pages/BlogPage'));
 const ContactPage = lazy(() => import('@/pages/ContactPage'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
 
+// Location pages — geo-targeted for international SEO
+const UsaPage = lazy(() => import('@/pages/locations/UsaPage'));
+const UkPage = lazy(() => import('@/pages/locations/UkPage'));
+const EuropePage = lazy(() => import('@/pages/locations/EuropePage'));
+
 export default function App() {
   return (
     <Routes>
@@ -25,6 +30,9 @@ export default function App() {
         <Route path="case-studies" element={<CaseStudiesPage />} />
         <Route path="blog" element={<BlogPage />} />
         <Route path="contact" element={<ContactPage />} />
+        <Route path="locations/usa" element={<UsaPage />} />
+        <Route path="locations/united-kingdom" element={<UkPage />} />
+        <Route path="locations/europe" element={<EuropePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

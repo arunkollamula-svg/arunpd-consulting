@@ -6,13 +6,16 @@ export default {
     extend: {
       colors: {
         navy: {
-          DEFAULT: '#0F172A',
+          DEFAULT: '#050816',
           50: '#f1f5f9',
           900: '#0F172A',
-          950: '#080d1a',
+          950: '#050816',
         },
+        'deep-navy': '#050816',
+        surface: '#080d1c',
+        'surface-2': '#0c1428',
         brand: {
-          DEFAULT: '#2563EB', // Electric Blue
+          DEFAULT: '#2563EB',
           50: '#eff6ff',
           100: '#dbeafe',
           200: '#bfdbfe',
@@ -30,8 +33,10 @@ export default {
           500: '#06B6D4',
           600: '#0891b2',
         },
-        slate: {
-          // tailwind slate already exists; alias kept for clarity in design tokens
+        violet: {
+          400: '#a78bfa',
+          500: '#8B5CF6',
+          600: '#7C3AED',
         },
       },
       fontFamily: {
@@ -46,6 +51,11 @@ export default {
         'radial-glow':
           'radial-gradient(60% 60% at 50% 0%, rgba(37,99,235,0.18) 0%, rgba(6,182,212,0.06) 40%, transparent 70%)',
         'brand-gradient': 'linear-gradient(135deg, #2563EB 0%, #06B6D4 100%)',
+        'aurora-1': 'radial-gradient(ellipse 80% 80% at 0% 0%, rgba(120,119,198,0.18), transparent)',
+        'aurora-2': 'radial-gradient(ellipse 80% 80% at 100% 100%, rgba(6,182,212,0.14), transparent)',
+        'aurora-3': 'radial-gradient(ellipse 70% 70% at 50% 100%, rgba(37,99,235,0.20), transparent)',
+        'hero-grid': `linear-gradient(rgba(37,99,235,0.07) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(37,99,235,0.07) 1px, transparent 1px)`,
       },
       boxShadow: {
         glow: '0 0 0 1px rgba(37,99,235,0.15), 0 20px 60px -20px rgba(37,99,235,0.45)',
@@ -86,6 +96,24 @@ export default {
           '0%': { opacity: '0', transform: 'translateY(16px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        aurora: {
+          '0%, 100%': { transform: 'translate(0px, 0px) scale(1)', opacity: '0.55' },
+          '33%': { transform: 'translate(45px, 35px) scale(1.10)', opacity: '0.75' },
+          '66%': { transform: 'translate(-30px, -45px) scale(0.93)', opacity: '0.45' },
+        },
+        'aurora-2': {
+          '0%, 100%': { transform: 'translate(0px, 0px) scale(1)', opacity: '0.45' },
+          '33%': { transform: 'translate(-55px, 25px) scale(1.08)', opacity: '0.70' },
+          '66%': { transform: 'translate(35px, -50px) scale(0.95)', opacity: '0.38' },
+        },
+        'spin-slow': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'count-up': {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
         float: 'float 6s ease-in-out infinite',
@@ -94,9 +122,14 @@ export default {
         marquee: 'marquee 32s linear infinite',
         'marquee-reverse': 'marquee-reverse 32s linear infinite',
         'marquee-slow': 'marquee 48s linear infinite',
+        'marquee-fast': 'marquee 20s linear infinite',
         'glow-pulse': 'glow-pulse 3s ease-in-out infinite',
         'border-beam': 'border-beam 4s ease infinite',
         'fade-up': 'fade-up 0.6s ease-out forwards',
+        aurora: 'aurora 14s ease-in-out infinite',
+        'aurora-slow': 'aurora-2 18s ease-in-out infinite',
+        'spin-slow': 'spin-slow 20s linear infinite',
+        'spin-reverse': 'spin-slow 25s linear infinite reverse',
       },
       backdropBlur: {
         xs: '2px',

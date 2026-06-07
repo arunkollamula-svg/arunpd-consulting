@@ -2,12 +2,9 @@ import Seo from '@/lib/Seo';
 import AnnouncementBar from '@/components/ui/AnnouncementBar';
 import Hero from '@/components/sections/Hero';
 import TrustBanner from '@/components/sections/TrustBanner';
-import About from '@/components/sections/About';
 import Services from '@/components/sections/Services';
-import AchievementBanner from '@/components/sections/AchievementBanner';
-import Solutions from '@/components/sections/Solutions';
-import Industries from '@/components/sections/Industries';
 import TechStack from '@/components/sections/TechStack';
+import WhyChooseUs from '@/components/sections/WhyChooseUs';
 import { Process, CTA } from '@/components/sections/Process';
 import Blog from '@/components/sections/Blog';
 
@@ -16,21 +13,25 @@ export default function HomePage() {
     <>
       <Seo
         path="/"
-        description="Senior Technology Consultant with 15+ years helping US and European enterprises scale through Cloud, AI, FinTech, and Digital Transformation. Remote consulting for startups, SMBs, and enterprises across the USA, UK, and Europe."
-        keywords="cloud consultant USA, AI consultant Europe, digital transformation consultant USA, remote IT consultant USA, cloud consulting services UK, fintech consultant Europe, AWS consultant USA, Azure consultant UK, AI agent development USA, enterprise technology consultant, Arun P Divakaran"
+        title="IT Consulting Services for USA, UK & Europe | AI, Fintech & Software Development"
+        description="Experienced IT Consultant with 15+ years in AI, Fintech, Web Development, Cloud Solutions, ReactJS, Node.js, PHP, and Digital Transformation. Serving clients across the USA, UK, Europe, and Middle East."
+        keywords="IT Consultant USA, Software Development Company UK, AI Consultant Europe, Fintech Development, ReactJS Developer, NodeJS Developer, Cloud Consultant, Web Application Development, custom software development USA, enterprise software development UK, AI development services, offshore development team, digital transformation consultant"
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'Person',
           name: 'Arun P Divakaran',
-          jobTitle: 'Senior Technology Consultant',
-          description: 'Cloud, AI & Digital Transformation consultant serving USA and European enterprises.',
+          jobTitle: 'Senior IT Consultant',
+          description: 'IT Consultant with 15+ years in AI, Fintech, Cloud, ReactJS, Node.js, and PHP, serving businesses in the USA, UK, and Europe.',
           url: 'https://arunpd.com/',
           image: 'https://arunpd.com/profile.jpeg',
-          sameAs: ['https://www.linkedin.com/in/arunmca1/'],
-          knowsAbout: ['Cloud Computing', 'Artificial Intelligence', 'FinTech', 'DevOps', 'Digital Transformation'],
+          sameAs: ['https://www.linkedin.com/in/arunmca1/', 'https://github.com/arunmca1'],
+          knowsAbout: ['Cloud Computing', 'Artificial Intelligence', 'FinTech', 'DevOps', 'Digital Transformation', 'ReactJS', 'Node.js', 'PHP', 'Custom Software Development', 'SaaS Development'],
           areaServed: [
             { '@type': 'Country', name: 'United States' },
             { '@type': 'Country', name: 'United Kingdom' },
+            { '@type': 'Country', name: 'Germany' },
+            { '@type': 'Country', name: 'France' },
+            { '@type': 'Country', name: 'Netherlands' },
             { '@type': 'Continent', name: 'Europe' },
           ],
         }}
@@ -38,12 +39,9 @@ export default function HomePage() {
       <AnnouncementBar />
       <Hero />
       <TrustBanner />
-      <About />
       <Services />
-      <AchievementBanner />
-      <Solutions />
-      <Industries />
       <TechStack />
+      <WhyChooseUs />
       <Process />
       <Blog limit={3} />
       <CTA />
